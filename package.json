@@ -14,7 +14,9 @@
   "author": "The AMP HTML Authors",
   "license": "Apache-2.0",
   "scripts": {
-    "start": "gulp serve"
+    "start": "gulp serve",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "basscss": "^8.0.3",
@@ -22,7 +24,8 @@
     "compression": "^1.6.1",
     "connect": "^3.4.0",
     "express": "^4.13.4",
-    "gcloud": "^0.27.0"
+    "gcloud": "^0.36.0",
+    "snyk": "^1.83.0"
   },
   "devDependencies": {
     "amphtml-validator": "^1.0.15",
@@ -57,5 +60,6 @@
     "string": "^3.3.1",
     "through2": "^2.0.1",
     "yargs": "^3.10.0"
-  }
+  },
+  "snyk": true
 }
