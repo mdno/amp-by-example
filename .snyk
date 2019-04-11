@@ -1,0 +1,37 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.3
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:hoek:20180212':
+    - gcloud > gce-images > google-auto-auth > google-auth-library > request > hawk > hoek:
+        patched: '2019-04-11T00:35:08.156Z'
+    - gcloud > retry-request > request > hawk > hoek:
+        patched: '2019-04-11T00:35:08.156Z'
+    - gcloud > google-auto-auth > google-auth-library > request > hawk > hoek:
+        patched: '2019-04-11T00:35:08.156Z'
+    - gcloud > retry-request > request > hawk > sntp > hoek:
+        patched: '2019-04-11T00:35:08.156Z'
+    - gcloud > retry-request > request > hawk > cryptiles > boom > hoek:
+        patched: '2019-04-11T00:35:08.156Z'
+    - gcloud > google-auto-auth > google-auth-library > request > hawk > boom > hoek:
+        patched: '2019-04-11T00:35:08.156Z'
+    - gcloud > google-auto-auth > google-auth-library > request > hawk > sntp > hoek:
+        patched: '2019-04-11T00:35:08.156Z'
+    - gcloud > retry-request > request > hawk > boom > hoek:
+        patched: '2019-04-11T00:35:08.156Z'
+    - gcloud > google-auto-auth > google-auth-library > request > hawk > cryptiles > boom > hoek:
+        patched: '2019-04-11T00:35:08.156Z'
+    - gcloud > gce-images > google-auto-auth > google-auth-library > request > hawk > sntp > hoek:
+        patched: '2019-04-11T00:35:08.156Z'
+    - gcloud > gce-images > google-auto-auth > google-auth-library > request > hawk > boom > hoek:
+        patched: '2019-04-11T00:35:08.156Z'
+    - gcloud > gce-images > google-auto-auth > google-auth-library > request > hawk > cryptiles > boom > hoek:
+        patched: '2019-04-11T00:35:08.156Z'
+  'npm:tunnel-agent:20170305':
+    - gcloud > retry-request > request > tunnel-agent:
+        patched: '2019-04-11T00:35:08.156Z'
+    - gcloud > google-auto-auth > google-auth-library > request > tunnel-agent:
+        patched: '2019-04-11T00:35:08.156Z'
+    - gcloud > gce-images > google-auto-auth > google-auth-library > request > tunnel-agent:
+        patched: '2019-04-11T00:35:08.156Z'
