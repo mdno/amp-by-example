@@ -1,0 +1,28 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:hoek:20180212':
+    - gcloud > retry-request > request > hawk > cryptiles > boom > hoek:
+        patched: '2024-09-17T04:03:26.803Z'
+        id: 'npm:hoek:20180212'
+        path: gcloud > retry-request > request > hawk > cryptiles > boom > hoek
+    - gcloud > google-auto-auth > google-auth-library > request > hawk > cryptiles > boom > hoek:
+        patched: '2024-09-17T04:03:26.803Z'
+        id: 'npm:hoek:20180212'
+        path: >-
+          gcloud > google-auto-auth > google-auth-library > request > hawk >
+          cryptiles > boom > hoek
+    - gcloud > gce-images > google-auto-auth > google-auth-library > request > hawk > cryptiles > boom > hoek:
+        patched: '2024-09-17T04:03:26.803Z'
+        id: 'npm:hoek:20180212'
+        path: >-
+          gcloud > gce-images > google-auto-auth > google-auth-library > request
+          > hawk > cryptiles > boom > hoek
+    - gcloud > gcs-resumable-upload > google-auto-auth > google-auth-library > request > hawk > cryptiles > boom > hoek:
+        patched: '2024-09-17T04:03:26.803Z'
+        id: 'npm:hoek:20180212'
+        path: >-
+          gcloud > gcs-resumable-upload > google-auto-auth > google-auth-library
+          > request > hawk > cryptiles > boom > hoek
